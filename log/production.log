@@ -1,0 +1,5 @@
+D, [2019-06-13T16:35:14.156820 #8966] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2019-06-13T16:35:14.159481 #8966] DEBUG -- :   [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+D, [2019-06-13T16:35:14.164056 #8966] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2019-06-13T16:35:14.173704 #8966] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-06-13T16:35:14.173816 #8966]  INFO -- : Migrating to CreateMembers (20190613055021)

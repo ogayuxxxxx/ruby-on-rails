@@ -1,0 +1,21 @@
+<h1>Orengehackers</h1>
+
+<% if current_member %>
+  <ul class="account-menu">
+    <%= menu_link_to current_member.name + "さん", :account %>
+    <%= menu_link_to "ログアウト", :session, method: :delete, date: { confrim: "ログアウトしますか?" } %>
+  </ul>
+<% end %>
+   
+<nav class = "menubar">
+ <ul>
+  <%= menu_link_to "TOP", :root %>
+  <%= menu_link_to "Qiita", :articles %>
+  <%= menu_link_to "Twitter", "#" %>
+  <%= menu_link_to "会員ブログ", :entries %>
+ <% if current_member %>
+  <%= menu_link_to "会員メンバー", :members  %>
+  <%= menu_link_to "管理ページ", "#" %>
+   <% end %>
+  </ul>
+</nav>
